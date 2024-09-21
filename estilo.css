@@ -1,215 +1,217 @@
-html{height: 100%;}
-*{  margin: 0;
-    box-sizing: border-box;
+html {
+  height: 100%;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #f5f5f5;
-    position: relative;
-     min-height: 100vh;
-
-
+body {
+  background-color: #f5f5f5;
+  position: relative;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-header{
+header {
   width: 100%;
   margin: 0px;
   position: relative;
   height: auto;
   background-color: #bbdefb;
-
-} 
-main
-{
+}
+main {
   position: relative;
 }
-footer{
-background-color: #37474f;
- position: absolute;
- bottom: 0;
- width: 100%;
-height:5 em;
-margin:auto;
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #37474f;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5 em;
 }
 
+.logo-footer img {
+  width: 100px;
+  height: auto; /* Mantiene la proporción de la imagen */
+}
 
-nav{                         /*establece color de fondo de la linea de los botones*/
-    background-color: #bbdefb;
-  }
-  input {                        /*no muestra el botón de menu */
-    display: none;     
-  }
-label {                       /*no muestra la etiqueta ☰ */
-    display:none;
-    }
-  ul{                           /*muestra los botones con la disposición horizontal para notebook */
-    display: flex;
-    justify-content:space-around;
-    margin-top:0;
-    padding: 0;
-   
-  
-  }
-  
-  
-  .boton {                     /*determina la propiedad de cada botón*/
-    display: block;
-    background: #ffffff;
-    margin: 10px;
-    padding: 10px;
-    list-style: none;
-    border-bottom: 1px solid grey;
-    width: 200px;
-    text-align: center;
-    border-radius: 20px;
-  }
-  .boxboton
-  {
-    display: flex;
-    justify-content:space-around;
-    margin-top:0;
-    padding: 0;
-  }
-  .botoneslink
-  {
-    display: block;
-    background: #ffffff;
-    margin: 10px;
-    padding: 10px;
-    list-style: none;
-    border-bottom: 1px solid grey;
-    width: 100px;
-    text-align: center;
-    border-radius: 20px;
-  }
-  .botoneslink a
-  {
-    color: #0d47a1;
-    text-decoration: none;
-  }
-  .boton a
-  {
-    color: #0d47a1;
-    text-decoration: none;
-  }
-  .logo {                     /*determina la propiedad de cada botón*/
-    display: block;
-    margin: 10px;
-    padding: 10px;
-    list-style: none;
-    width: 200px;
-    text-align: center;
-  }
-  /*Estilo cuando el mouse pasa encima de cada link del menu*/
-  li:hover {                        /*determina la propiedad de cada botón cuando se posiciona encima*/
-    filter: brightness(110%);
-  }
-h1
-{
+.text-footer {
+  color: white;
+}
+
+nav {
+  /*establece color de fondo de la linea de los botones*/
+  background-color: #bbdefb;
+}
+input {
+  /*no muestra el botón de menu */
+  display: none;
+}
+label {
+  /*no muestra la etiqueta ☰ */
+  display: none;
+}
+ul {
+  /*muestra los botones con la disposición horizontal para notebook */
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0;
+  padding: 0;
+}
+
+.boton {
+  /*determina la propiedad de cada botón*/
+  display: block;
+  background: #ffffff;
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid grey;
+  width: 200px;
+  text-align: center;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.boxboton {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0;
+  padding: 0;
+}
+.botoneslink {
+  display: block;
+  background: #ffffff;
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid grey;
+  width: 100px;
+  text-align: center;
+  border-radius: 20px;
+}
+.botoneslink a {
+  color: #0d47a1;
+  text-decoration: none;
+}
+.boton a {
+  color: #0d47a1;
+  text-decoration: none;
+}
+.logo {
+  /*determina la propiedad de cada botón*/
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  width: 200px;
+  text-align: center;
+}
+/*Estilo cuando el mouse pasa encima de cada link del menu*/
+li:hover {
+  /*determina la propiedad de cada botón cuando se posiciona encima*/
+  filter: brightness(110%);
+}
+h1 {
   text-align: center;
   padding-bottom: 20px;
   padding-top: 10px;
-}
-
-.imgpresentacion{
-   width: 50%;
-    border-radius: 20px; 
-     box-shadow: 10px 10px 5px rgb(90, 91, 91);
-}
-
-h1
-{
   color: #0d47a1;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.boxflex{
-    display: flex;
-    justify-content:space-around;
-    
-} 
-.boxindividual{
-    background-color: #bbdefb;
-    width: 300px;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 20px;
-    box-shadow:10px 10px 5px rgb(90, 91, 91);
-    text-align: center;
 
+.imgpresentacion {
+  width: 50%;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px rgb(90, 91, 91);
 }
-.fotointegrante{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    box-sizing: border-box;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    
 
-} 
-.nombres
-{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.boxflex {
+  display: flex;
+  justify-content: space-around;
+}
+.boxindividual {
+  background-color: #bbdefb;
+  width: 300px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px rgb(90, 91, 91);
+  text-align: center;
+}
+.fotointegrante {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  box-sizing: border-box;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.nombres {
   font-size: larger;
   text-align: center;
   color: #0d47a1;
 }
-.link{
- 
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: larger;
-    text-align: center;
+.link {
+  font-size: larger;
+  text-align: center;
 }
-@media all and (max-width: 700px) {  /*cuando el dispositivo es como máximo de 700px*/
-  
-    input:checked  ~ ul{   /*muestra todas el contenido de todas las etiquetas ul */
-    display:block;
-      }
-  
-      input:checked ~ label {   /*muestra todo el contenido de todas las etiquetas label */
-      background: rgb(14, 114, 207); 
-          }
-  
-      label:hover{                /*cambia el color de ☰ */
-      background: rgb(14, 114, 207);
-      }
-  
-    li{                         /*elimina el margen  de cada botón */
-         margin: 0px;
-         text-align: left;
-     }
-  
-     label {                      /* dibuja la etiqueta ☰  con formato botón */
-       box-sizing: border-box;
-       display: block;
-       border: 1px solid black;
-       border-radius: 5px;
-       width: 30px;
-       height: 30px;
-       line-height: 30px;
-       font-weight: bold;
-       text-align: center;
-       user-select: none;
-       background-color: cadetblue;
-  
-        }
-      
-  
-    ul{                          /*deja de mostrar el bloque contenedor de los botones horizontales */
-       display: none;
-       background-color:rgb(179, 94, 24);
-  
-      }
-     .contenedorflex{
-        flex-direction: column;
-        justify-content: center;
-     }  
+@media all and (max-width: 700px) {
+  /*cuando el dispositivo es como máximo de 700px*/
+
+  input:checked ~ ul {
+    /*muestra todas el contenido de todas las etiquetas ul */
+    display: block;
   }
-  ul li a{
-    text-decoration: none;
-    color: black;
+
+  input:checked ~ label {
+    /*muestra todo el contenido de todas las etiquetas label */
+    background: rgb(14, 114, 207);
   }
-  ul li a:hover{
-    color: red;
+
+  label:hover {
+    /*cambia el color de ☰ */
+    background: rgb(14, 114, 207);
   }
+
+  li {
+    /*elimina el margen  de cada botón */
+    margin: 0px;
+    text-align: left;
+  }
+
+  label {
+    /* dibuja la etiqueta ☰  con formato botón */
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    background-color: cadetblue;
+  }
+
+  ul {
+    /*deja de mostrar el bloque contenedor de los botones horizontales */
+    display: none;
+    background-color: rgb(179, 94, 24);
+  }
+  .contenedorflex {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+ul li a:hover {
+  color: red;
+}
