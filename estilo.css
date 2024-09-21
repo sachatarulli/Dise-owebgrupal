@@ -130,6 +130,7 @@ h1 {
 .boxflex {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .boxindividual {
   background-color: #bbdefb;
@@ -140,6 +141,7 @@ h1 {
   box-shadow: 10px 10px 5px rgb(90, 91, 91);
   text-align: center;
 }
+
 .fotointegrante {
   width: 100%;
   height: 300px;
@@ -159,22 +161,18 @@ h1 {
   font-size: larger;
   text-align: center;
 }
-@media all and (max-width: 700px) {
-  /*cuando el dispositivo es como máximo de 700px*/
+@media all and (max-width: 750px) {
+  /*cuando el dispositivo es como máximo de 750px*/
 
   input:checked ~ ul {
     /*muestra todas el contenido de todas las etiquetas ul */
-    display: block;
-  }
-
-  input:checked ~ label {
-    /*muestra todo el contenido de todas las etiquetas label */
-    background: rgb(14, 114, 207);
-  }
-
-  label:hover {
-    /*cambia el color de ☰ */
-    background: rgb(14, 114, 207);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: #bbdefb;
   }
 
   li {
@@ -187,21 +185,15 @@ h1 {
     /* dibuja la etiqueta ☰  con formato botón */
     box-sizing: border-box;
     display: block;
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
     font-weight: bold;
-    text-align: center;
-    user-select: none;
-    background-color: cadetblue;
+    padding-left: 5%;
+    font-size: 2.5rem;
+    padding-left: 3%;
   }
 
   ul {
     /*deja de mostrar el bloque contenedor de los botones horizontales */
     display: none;
-    background-color: rgb(179, 94, 24);
   }
   .contenedorflex {
     flex-direction: column;
