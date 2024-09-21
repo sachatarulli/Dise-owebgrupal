@@ -138,6 +138,8 @@ h1
 }
 .fotointegrante{
     width: 100%;
+    height: 300px;
+    object-fit: cover;
     box-sizing: border-box;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
