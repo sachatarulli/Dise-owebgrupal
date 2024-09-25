@@ -38,7 +38,7 @@ header {
 
 footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: #37474f;
   width: 100%;
@@ -59,8 +59,26 @@ footer {
   max-height: 100%;
 }
 
+.contenido-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+  height: 100%;
+}
+
+.footer-primera-linea {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-footer {
+  padding: 1%;
+}
+
 .logo-footer img {
-  width: 100px;
+  width: 150px;
   height: auto; /* Mantiene la proporción de la imagen */
 }
 
@@ -72,6 +90,8 @@ footer {
 nav {
   /*establece color de fondo de la linea de los botones*/
   background-color: #bbdefb;
+  overflow: hidden;
+  padding: 10px;
 }
 input {
   /*no muestra el botón de menu */
@@ -80,6 +100,7 @@ input {
 label {
   /*no muestra la etiqueta ☰ */
   display: none;
+  float: right;
 }
 ul {
   /*muestra los botones con la disposición horizontal para notebook */
@@ -132,6 +153,7 @@ ul {
   width: 200px;
   height: 60px;
   text-align: center;
+  float: left;
 }
 
 .logo img {
@@ -193,8 +215,8 @@ h1 {
   font-size: larger;
   text-align: center;
 }
-@media all and (max-width: 830px) {
-  /*cuando el dispositivo es como máximo de 830px*/
+@media all and (max-width: 900px) {
+  /*cuando el dispositivo es como máximo de 900px*/
 
   input:checked ~ ul {
     /*muestra todas el contenido de todas las etiquetas ul */
@@ -218,14 +240,18 @@ h1 {
     box-sizing: border-box;
     display: block;
     font-weight: bold;
-    padding-left: 5%;
     font-size: 2.5rem;
-    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  nav {
+    padding: 0;
   }
 
   ul {
-    /*deja de mostrar el bloque contenedor de los botones horizontales */
     display: none;
+    position: absolute;
+    top: 100%; /* Coloca el ul justo debajo del nav */
   }
 }
 ul li a {
@@ -234,4 +260,26 @@ ul li a {
 }
 ul li a:hover {
   color: red;
+}
+
+@media all and (max-width: 650px) {
+  .contenido-footer {
+    flex-direction: column-reverse;
+  }
+
+  .contenido-footer div {
+    padding: 1%;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .footer-primera-linea {
+    flex-wrap: wrap;
+  }
+
+  .materia {
+    width: 100%;
+  }
 }
