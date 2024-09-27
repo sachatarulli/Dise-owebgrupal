@@ -1,0 +1,62 @@
+.servicios h1 {
+  text-align: center;
+  color: #0d47a1;
+  margin-top: 10px;
+}
+.grid-servicios {
+  display: flex;
+  justify-content: space-around;
+}
+
+.servicio_Tarjeta {
+  background-color: #bbdefb;
+  width: 300px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.servicio_Tarjeta img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.servicio_Tarjeta p {
+  background-color: #bbdefb;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+
+.frases_destacadas {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 10px;
+}
+
+.frase-cuadro{
+  background-color: #bbdefb;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+  margin:40px;
+}
+@media all and (max-width: 900px) {
+  /* Ajuste de tarjetas para pantallas pequeñas */
+  .grid-servicios {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .frases_destacadas {
+    flex-direction: column;
+    gap:0px;
+    margin:0px;
+  }
+}
