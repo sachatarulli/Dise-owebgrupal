@@ -20,7 +20,7 @@ header {
   margin: 0px;
   position: relative;
   height: auto;
-  background-color: #bbdefb;
+  background-color: #D3E8FB;
 }
 
 .inicio {
@@ -89,7 +89,6 @@ footer {
 
 nav {
   /*establece color de fondo de la linea de los botones*/
-  background-color: #bbdefb;
   overflow: hidden;
   padding: 10px;
 }
@@ -141,11 +140,11 @@ ul {
   border-radius: 20px;
 }
 .botoneslink a {
-  color: #0d47a1;
+  color: #042458;
   text-decoration: none;
 }
 .boton a {
-  color: #0d47a1;
+  color: #042458;
   text-decoration: none;
 }
 .logo {
@@ -172,7 +171,7 @@ h1 {
   text-align: center;
   padding-bottom: 20px;
   padding-top: 10px;
-  color: #0d47a1;
+  color: #042458;
 }
 
 .imgpresentacion {
@@ -187,7 +186,7 @@ h1 {
   flex-wrap: wrap;
 }
 .boxindividual {
-  background-color: #bbdefb;
+  background-color: #D3E8FB;
   width: 300px;
   margin: 20px;
   padding: 10px;
@@ -209,7 +208,7 @@ h1 {
 .nombres {
   font-size: larger;
   text-align: center;
-  color: #0d47a1;
+  color: #042458;
 }
 .link {
   font-size: larger;
@@ -226,7 +225,7 @@ h1 {
     position: absolute;
     z-index: 1;
     width: 100%;
-    background-color: #bbdefb;
+    background-color: #D3E8FB;
   }
 
   li {
