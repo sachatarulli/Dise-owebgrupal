@@ -1,0 +1,70 @@
+
+.content {           /* contenedor para todo el contenido */
+    max-width: 1200px; /* mantien todo centrado y limita para pantallas mas grandes */
+    margin: 0 auto;     /*centra el contenedor en la pagina */
+    text-align: center;  /* alinea el texto del contenedor */
+}
+
+
+.row {              /*Crea una fila flexible para organizar los elementos*/
+    display: flex;  /*Activa el modelo de caja flexible*/
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en varias lineas cuando no hay espacio*/
+    justify-content: space-between;  /*distribuye el contenido a lo largo de la fila */
+    align-items: center;        /* alinea los elementos verticalmente en la fila */
+    text-align: left;           /*tira el texto a la izquierda */
+}
+
+.column {           /*Define un estilo general para las columnas dentro de .row*/
+    flex: 1;        /* cada columna ocupa un tamanio proporsional al espacio disponible */
+    margin: 10px;   /*aniade un espacio de 10 px alrededor de cada columna */
+}
+
+.text {             /*asegura que el contenido de texto no exceda el ancho de la columna */
+    max-width: 100%; /*garantiza que el texto no desborde del contenedor */
+}
+
+.image img {
+    max-width: 100%; /* Se asegura que no exceda del contenedor */
+    height: auto;       /* mantiene la proporcion de la imagen */
+    object-fit: cover; /* Ajusta la imagen para que se mantenga dentro del área */
+    border-radius: 8px; /* borde redondeado de la imagen */
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {  /*esto se aplica solo cuando el tamanio es igual o menos a 768 osea celulares o tablets */
+    .row {                      /*hace que las cosas se posicionen de filas a columnas verticalemente */
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image img {
+        max-width: 80%; /* Tamaño de imagen reducido en pantallas pequeñas */
+        height: auto; /* Asegura que la imagen no se distorsione */
+        object-fit: contain; /* Evita que se corte parte de la imagen */
+    }
+
+    .text {                 /*asegura que el texto entre */
+        max-width: 100%;
+    }
+}
+
+.cta-container {                /*el contenedor envuelve al boton */
+    display: flex;
+    justify-content: center;  /* Centra el botón horizontalmente */
+    margin-top: 20px;         /* Añade un margen superior para separarlo del texto */
+}
+
+.cta {
+    display: inline-block;  /*tienen propiedades de bloque pero no ocupa toda la linea */
+    padding: 10px 20px;             /*proporciona el espacion interno del boton */
+    background-color: #bbdefb;      
+    color: #0d47a1;
+    text-decoration: none;          /*elimina el subrayado */
+    font-weight: bold;              /*aumenta el peso de la ffuente */
+    border-radius: 5px;             /*borde redondeado */
+    margin-top: 20px;               /*a;ade espacio arriba del boton */
+}
+
+.cta:hover {
+    background-color: #aaaaaa;
+}
