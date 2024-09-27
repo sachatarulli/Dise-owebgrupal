@@ -1,10 +1,10 @@
 .servicios h1 {
   text-align: center;
-  color: #0d47a1;
+  color: #042458;
   margin-top: 10px;
 }
 .descripcion_Tarjeta {
-  background-color: #bbdefb;
+  background-color: #D3E8FB;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -16,14 +16,14 @@
 .descripcion_Tarjeta p {
   font-size: 18px;
   line-height: 1.5;
-  color: #0d47a1;
+  color: #042458;
 }
 .grid-servicios {
   display: flex;
   justify-content: space-around;
 }
 .servicio_Tarjeta {
-  background-color: #bbdefb;
+  background-color: #D3E8FB;
   width: 300px;
   margin: 20px;
   padding: 10px;
@@ -37,10 +37,11 @@
   border-radius: 20px;
 }
 .servicio_Tarjeta p {
-  background-color: #bbdefb;
+  background-color: #D3E8FB;
   padding: 15px;
   margin-top: 10px;
   border-radius: 10px;
+  color: #042458;
 }
 .frases_destacadas {
   display: flex;
@@ -49,12 +50,15 @@
   margin: 0 10px;
 }
 .frase-cuadro{
-  background-color: #bbdefb;
+  background-color: #D3E8FB;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
   flex: 1;
   margin:40px;
+}
+.frase-cuadro p{
+  color: #042458; 
 }
 @media all and (max-width: 900px) {
 .descripcion_Tarjeta{
