@@ -37,10 +37,16 @@
         text-align: center;
     }
 
+    .image {
+        order: -1; /* Coloca la imagen en la parte superior */
+    }
+
     .image img {
         max-width: 80%; /* Tamaño de imagen reducido en pantallas pequeñas */
         height: auto; /* Asegura que la imagen no se distorsione */
         object-fit: contain; /* Evita que se corte parte de la imagen */
+        margin-bottom: 20px; /* Añade un margen inferior para separar la imagen del texto */
+
     }
 
     .text {                 /*asegura que el texto entre */
@@ -68,3 +74,4 @@
 .cta:hover {
     background-color: #aaaaaa;
 }
+
