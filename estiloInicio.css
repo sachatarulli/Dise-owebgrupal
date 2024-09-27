@@ -16,7 +16,7 @@
 
 .column {           /*Define un estilo general para las columnas dentro de .row*/
     flex: 1;        /* cada columna ocupa un tamanio proporsional al espacio disponible */
-    margin: 10px;   /*aniade un espacio de 10 px alrededor de cada columna */
+    margin: 65px;   /*aniade un espacio de 65 px alrededor de cada columna */
 }
 
 .text {             /*asegura que el contenido de texto no exceda el ancho de la columna */
