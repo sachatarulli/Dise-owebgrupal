@@ -31,7 +31,7 @@ header {
 
 main {
   flex: 1;
-  max-width: 100%;
+  max-width: 90%;
 }
 
 footer {
@@ -106,6 +106,8 @@ ul {
   justify-content: space-around;
   margin-top: 0;
   padding: 0;
+  margin-bottom: 0px;
+  
 }
 
 .boton {
@@ -211,7 +213,10 @@ ul {
 
 .titulo-soporte {
   text-align: center;
-  margin: 20px; /* Ajusta el margen según necesites */
+  margin: 10px; /* Ajusta el margen según necesites */
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: large;
 }
 
 .descripcion-soporte {
@@ -270,10 +275,10 @@ ul {
   margin-bottom: 50px;
 }
 
-.parrafo-actividad
+/* .parrafo-actividad
 
 {text-align: center;
-}
+} */
 
 .botonmio{
   color: white;
@@ -388,7 +393,7 @@ ul {
 {text-align:center;
 }
 
-}
+} 
 
 
 
