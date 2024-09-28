@@ -3,6 +3,8 @@
     max-width: 1200px; /* mantien todo centrado y limita para pantallas mas grandes */
     margin: 0 auto;     /*centra el contenedor en la pagina */
     text-align: center;  /* alinea el texto del contenedor */
+    background-color: #d3e8fb;
+
 }
 
 
@@ -63,8 +65,8 @@
 .cta {
     display: inline-block;  /*tienen propiedades de bloque pero no ocupa toda la linea */
     padding: 10px 20px;             /*proporciona el espacion interno del boton */
-    background-color: #bbdefb;      
-    color: #0d47a1;
+    background-color: #D3E8FB;      
+    color: #042458;
     text-decoration: none;          /*elimina el subrayado */
     font-weight: bold;              /*aumenta el peso de la ffuente */
     border-radius: 5px;             /*borde redondeado */
@@ -74,4 +76,13 @@
 .cta:hover {
     background-color: #aaaaaa;
 }
+
+.selected {
+    background-color: #042458;
+  }
+  
+  .selected a {
+    color: white;
+    text-decoration: underline;
+  }
 
