@@ -39,8 +39,7 @@
 
 .trabajos {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: space-between;
   width: 90%;
   margin-top: 2%;
   margin-bottom: 2%;
@@ -105,9 +104,19 @@
   max-height: 100px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .tecnologia {
     flex: 1 1 50%;
     max-width: 50%;
+  }
+
+  .trabajos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-top: 2%;
+    margin-bottom: 2%;
   }
 }
