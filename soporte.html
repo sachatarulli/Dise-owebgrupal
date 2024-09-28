@@ -1,48 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grupo 8</title>
-    <link rel="stylesheet" href="estilo.css">
-</head>
 
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="estilosdp.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
     <header>
-        <nav>
-            <input type="checkbox" id="menu">
-            <span class="logo"><a href="index.html"><img src="./img/logo.png"></a></span>
-            <label for="menu"> ☰ </label>
-            <ul>
-                <li class="boton"><a href="index.html"> Inicio</a></li>
-                <li class="boton"><a href="nosotros.html">Nosotros</a></li>
-                <li class="boton"><a href="servicios.html"> Servicios</a></li>
-                <li class="boton"><a href="portafolio.html"> Portafolio</a></li>
-                <li class="boton"><a href="soporte.html"> Soporte</a></li>
-                <li class="boton"><a href="contacto.html"> Contacto</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <input type="checkbox" id="menu" />
+        <span class="logo">
+          <a href="index.html"><img src="./img/logo.png" /></a>
+        </span>
+        <label for="menu"> ☰ </label>
+        <ul>
+          <li class="boton"><a href="index.html">Inicio</a></li>
+          <li class="boton"><a href="nosotros.html">Nosotros</a></li>
+          <li class="boton"><a href="servicios.html">Servicios</a></li>
+          <li class="boton"><a href="portafolio.html">Portafolio</a></li>
+          <li class="botonmio"><a href="soporte.html">Soporte</a></li>
+          <li class="boton"><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
     <main class="inicio">
+      <h1 class="titulo-soporte">Soporte</h1>
+      <div class="descripcion-soporte">
+        <p>
+          En UADEV sabemos que un buen soporte técnico es clave para el éxito de
+          tu negocio. Ofrecemos un servicio integral que cubre todas tus
+          necesidades, desde la gestión de incidencias hasta el mantenimiento de
+          tu infraestructura tecnológica. Nuestro equipo de expertos está
+          disponible para ayudarte con la configuración de redes, asistencia en
+          servidores y acceso a nuestra Mesa de Ayuda. Nos comprometemos a
+          ofrecerte soluciones rápidas y efectivas, porque tu tranquilidad es
+          nuestra prioridad
+        </p>
+      </div>
+      <div class="div-galeria">
+        <p class="titulo-galeria">Mantenimiento de software</p>
+        <div class="galeria">
+          <a href="#actividad-img1"
+            ><img src="img/callcenter.jpg" alt="callcenter"
+          /></a>
+          <a href="#actividad-img2"
+            ><img src="img/servidores.jpg" alt="servidores"
+          /></a>
+          <a href="#actividad-img3"
+            ><img src="img/redes.jpg" alt="servidores"
+          /></a>
+        </div>
+      </div>
+      <div class="div-actividades">
+        <div class="actividad">
+          <img id="actividad-img1" src="img/callcenter.jpg" alt="" />
+          <p class="parrafo-actividad">
+            Nuestra Mesa de Ayuda está siempre disponible para resolver tus
+            consultas y problemas técnicos. Contáctanos por chat, correo
+            electrónico o teléfono, y nuestro equipo de expertos te brindará
+            asistencia rápida y efectiva, asegurando que tus operaciones sigan
+            sin contratiempos
+          </p>
+        </div>
+        <div class="actividad">
+          <img id="actividad-img2" src="img/servidores.jpg" alt="" />
+          <p class="parrafo-actividad">
+            Ofrecemos soporte completo para servidores, garantizando que tu
+            infraestructura esté siempre operativa. Realizamos monitorización
+            constante, mantenimiento preventivo y resolución de problemas para
+            asegurar un rendimiento óptimo, ya sea en servidores locales o en la
+            nube
+          </p>
+        </div>
+        <div class="actividad">
+          <img id="actividad-img3" src="img/redes.jpg" alt="" />
+          <p class="parrafo-actividad">
+            Con nuestro servicio de soporte en redes y telefonía, aseguramos una
+            conectividad fluida y confiable. Proporcionamos instalación,
+            configuración y mantenimiento de redes, así como asistencia para
+            sistemas de telefonía, garantizando que tu comunicación funcione sin
+            interrupciones
+          </p>
+        </div>
+      </div>
     </main>
     <footer>
-        <div class="contenido-footer">
-            <div class="footer-primera-linea">
-                <div class="text-footer materia">Materia: Diseño y Desarrollo Web</div>
-                <div class="text-footer">Curso: 492766</div>
-                <div class="text-footer">Grupo: 06</div>
-            </div>
-            <div class="footer-segunda-linea">
-                <div class="text-footer">Todos los derechos reservados - Sitio desarrollado para uso educativo -
-                    2024</div>
-            </div>
+      <div class="contenido-footer">
+        <div class="footer-primera-linea">
+          <div class="text-footer materia">
+            Materia: Diseño y Desarrollo Web
+          </div>
+          <div class="text-footer">Curso: 492766</div>
+          <div class="text-footer">Grupo: 06</div>
         </div>
-        <div class="logo-footer">
-            <img src=" ./img/uade_logo.png" />
+        <div class="footer-segunda-linea">
+          <div class="text-footer">
+            Todos los derechos reservados - Sitio desarrollado para uso
+            educativo - 2024
+          </div>
         </div>
+      </div>
+      <div class="logo-footer">
+        <img src=" ./img/uade_logo.png" />
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
