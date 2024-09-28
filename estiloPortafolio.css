@@ -1,0 +1,104 @@
+.portafolio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+}
+
+.portafolio h1 {
+  text-align: center;
+  color: #042458;
+  margin-top: 10px;
+}
+.descripcion-portafolio {
+  width: 90%;
+  background-color: #d3e8fb;
+  padding: 20px 10%;
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px;
+  margin: 20px auto;
+  font-size: 18px;
+}
+.descripcion p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #042458;
+}
+
+.trabajos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.trabajo-card {
+  width: 45%;
+  min-width: 350px;
+  background-color: #d3e8fb;
+  min-height: 550px;
+  padding: 1%;
+  border-radius: 20px;
+  text-align: center;
+  margin: 2% 0%;
+}
+.trabajo-card img {
+  width: 75%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.trabajo-card p {
+  background-color: #d3e8fb;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: #042458;
+}
+
+.tecnologias {
+  width: 90%;
+  background-color: #d3e8fb;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 1%;
+}
+.tecnologias h2 {
+  text-align: center;
+  color: #042458;
+}
+.tecnologias p {
+  color: #042458;
+}
+
+.tecnologias-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tecnologia {
+  flex: 1 1 25%;
+  max-width: 25%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.tecnologia img {
+  width: 100%;
+  height: auto;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+@media (max-width: 600px) {
+  .tecnologia {
+    flex: 1 1 50%;
+    max-width: 50%;
+  }
+}
