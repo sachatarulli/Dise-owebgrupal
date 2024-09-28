@@ -102,6 +102,7 @@
   height: auto;
   max-width: 100px;
   max-height: 100px;
+  object-fit: contain;
 }
 
 @media (max-width: 800px) {
