@@ -6,26 +6,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grupo 8</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilocontacto.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <input type="checkbox" id="menu">
+            <input class="sanguche" type="checkbox" id="menu">
             <span class="logo"><a href="index.html"><img src="./img/logo.png"></a></span>
-            <label for="menu"> ☰ </label>
+            <label class="menuu" for="menu"> ☰ </label>
             <ul>
                 <li class="boton"><a href="index.html"> Inicio</a></li>
                 <li class="boton"><a href="nosotros.html">Nosotros</a></li>
                 <li class="boton"><a href="servicios.html"> Servicios</a></li>
                 <li class="boton"><a href="portafolio.html"> Portafolio</a></li>
                 <li class="boton"><a href="soporte.html"> Soporte</a></li>
-                <li class="boton"><a href="contacto.html"> Contacto</a></li>
+                <li class="botonaca"><a href="contacto.html"> Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <main class="inicio">
+    <main class="contacto">
+        <div class="titulo">
+            <p>Contacto</p>
+        </div>
+        <div class="textocontact">
+            <p class="ertext">Si tenes alguna consulta o necesitas mas información sobre nuestros servicios, no dudes en ponerte en contacto con nosotros. Completa el formulario a continuación y te responderemos lo antes posible.</p>
+            <p>Tambien podes encontrarnos en nuestra oficina. Revisa el mapa más abajo para obtener la ubicación exacta y nuestros horarios de atención.</p>
+        </div>
+        <div class="consultas">
+            <div class="tituloform">
+                <p>Consultas</p>
+            </div>
+            <div class="formulario">
+                <form>
+                    <div class="formulariorow">
+                        <label class="formtexto" for="nombre">Nombre y Apellido</label>
+                        <input class="formcampo" type="text" id="nombre" name="nombre" placeholder="">
+                    </div>
+                    <div class="formulariorow">        
+                        <label class="formtexto" for="email">Correo electrónico</label>
+                        <input class="formcampo" type="email" id="email" name="email" placeholder="">
+                    </div>
+                    <div class="formulariorow">
+                         <label class="formtexto" for="telefono">Teléfono</label>
+                        <input class="formcampo" type="tel" id="telefono" name="telefono" placeholder="">
+                    </div>
+                    <div class="formulariorow">
+                        <label class="formtexto" for="consulta">Consulta</label>
+                        <textarea class="formcompletar" id="consulta" name="consulta" placeholder=""></textarea>
+                    </div>
+                    <div class="botonf">
+                        <button class="botonenviar" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="titulo">
+            <p>Nuestra Oficina</p>
+        </div>
+        <div class="oficina">
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.4902960747318!2d-58.38592466363357!3d-34.61704822172655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaba6ac89b35%3A0x1a2dc24cbca665a7!2sUADE!5e0!3m2!1ses-419!2sar!4v1727272223507!5m2!1ses-419!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="mapatexto">
+                <p>Dirección: Lima 757, C1073</p>
+                <p class="ertext">Cdad. Autónoma de Buenos Aires</p>
+                <p>Horarios de atención:</p>
+                <p>Lunes a viernes de 10hs a 18hs</p>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="contenido-footer">

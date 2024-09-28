@@ -1,0 +1,558 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  margin: 0px;
+  position: relative;
+  height: auto;
+  background-color: #D3E8FB;
+}
+
+.inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #37474f;
+  width: 100%;
+  height: 5 em;
+}
+
+.logo-principal {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.logo-principal img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.contenido-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+  height: 100%;
+}
+
+.footer-primera-linea {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-footer {
+  padding: 1%;
+}
+
+.logo-footer img {
+  width: 150px;
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.text-footer {
+  color: white;
+  text-align: center;
+}
+
+nav {
+  /*establece color de fondo de la linea de los botones*/
+  background-color: #D3E8FB;
+  overflow: hidden;
+  padding: 10px;
+}
+.sanguche {
+  /*no muestra el botón de menu */
+  display: none;
+}
+
+.botonaca {
+  color: white;
+  text-decoration: underline;
+  display: block;
+  background: #042458;
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid grey;
+  width: 200px;
+  text-align: center;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.botonaca a{
+  text-decoration: underline;
+  color: white;
+}
+.botonaca a:hover{
+  color: none;
+}
+.menuu {
+  /*no muestra la etiqueta ☰ */
+  display: none;
+  float: right;
+}
+ul {
+  /*muestra los botones con la disposición horizontal para notebook */
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0;
+  padding: 0;
+}
+
+.boton {
+  /*determina la propiedad de cada botón*/
+  display: block;
+  background: #ffffff;
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid grey;
+  width: 200px;
+  text-align: center;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.boxboton {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0;
+  padding: 0;
+}
+.botoneslink {
+  display: block;
+  background: #ffffff;
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid grey;
+  width: 100px;
+  text-align: center;
+  border-radius: 20px;
+}
+.botoneslink a {
+  color: #042458;
+  text-decoration: none;
+}
+.boton a {
+  color: #042458;
+  text-decoration: none;
+}
+.logo {
+  display: block;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  float: left;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  min-width: 150px; /* Tamaño mínimo */
+  min-height: auto; /* Mantener la proporción */
+}
+
+/*Estilo cuando el mouse pasa encima de cada link del menu*/
+li:hover {
+  /*determina la propiedad de cada botón cuando se posiciona encima*/
+  filter: brightness(110%);
+}
+h1 {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  color: #042458;
+}
+
+.imgpresentacion {
+  width: 50%;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px rgb(90, 91, 91);
+}
+
+.boxflex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.boxindividual {
+  background-color: #D3E8FB;
+  width: 300px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px rgb(90, 91, 91);
+  text-align: center;
+}
+
+.fotointegrante {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  box-sizing: border-box;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.nombres {
+  font-size: larger;
+  text-align: center;
+  color: #042458;
+}
+.link {
+  font-size: larger;
+  text-align: center;
+}
+
+
+/* NUEVO */
+.titulo
+{
+  display: flex;
+  font-size: 2rem;
+  color: #042458;
+  text-align: center;
+  margin-top: 40px;
+}
+.textocontact
+{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: #D3E8FB;
+  color: #042458;
+  font-size: 1rem;
+  height: auto;
+  width: 80%;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 2%;
+}
+.consultas
+{
+  background-color: #D3E8FB;
+  margin: 10px;
+  width: 60%;
+  margin-top: 40px;
+}
+.tituloform
+{
+  text-align: center;
+  font-size: 1.5rem;
+  color: #042458;
+  padding: 1%;
+
+}
+.oficina
+{
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: 300px;
+  margin: 10px;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.mapa
+{
+  height: 300px;
+  width: 50%;
+  padding: 3px;
+}
+.mapatexto
+{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 1.3rem;
+  color: #042458;
+  justify-content: center;
+  margin: 10px;
+  width: 40%;
+}
+.contacto
+{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formtexto {
+  margin-bottom: 5px;
+  font-weight: bold;
+  width: 35%;
+}
+
+.formcompletar {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 65%;
+}
+.formcampo {
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 65%;
+}
+
+.formcompletar {
+  height: 100px;
+  resize: none;
+}
+
+.botonenviar {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 15%;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.formulariorow
+{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.botonf
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3%;
+}
+.ertext{
+  padding-bottom: 10px;
+}
+@media all and (max-width: 900px) {
+  /*cuando el dispositivo es como máximo de 900px*/
+
+  input:checked ~ ul {
+    /*muestra todas el contenido de todas las etiquetas ul */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: #D3E8FB;
+  }
+
+  li {
+    /*elimina el margen  de cada botón */
+    margin: 0px;
+    text-align: left;
+  }
+
+  .menuu {
+    /* dibuja la etiqueta ☰  con formato botón */
+    box-sizing: border-box;
+    display: block;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding-right: 3%;
+  }
+  .oficina
+  {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .mapa
+{
+  padding: 3px;
+  padding-bottom: 5px;
+}
+.mapatexto
+{
+  display: flex;
+  text-align: center;
+  font-size: 1rem;
+  color: #042458;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  width: 80%;
+  padding-top: 5px;
+}
+  nav {
+    padding: 0;
+  }
+
+  ul {
+    display: none;
+    position: absolute;
+    top: 100%; /* Coloca el ul justo debajo del nav */
+  }
+  
+}
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+.boton a:hover {
+  color: red;
+}
+
+@media all and (max-width: 600px) {
+  .consultas {
+    padding: 15px;
+}
+
+.formcampo {
+    font-size: 14px;
+}
+.formcompletar {
+  font-size: 14px;
+}
+  .contenido-footer {
+    flex-direction: column-reverse;
+  }
+
+  .contenido-footer div {
+    padding: 1%;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .footer-primera-linea {
+    flex-wrap: wrap;
+  }
+
+  .materia {
+    width: 100%;
+  }
+  .oficina
+{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.mapa
+{
+  height: 400px;
+  padding: 3px;
+  padding-bottom: 5px;
+}
+.mapatexto
+{
+  display: flex;
+  text-align: center;
+  font-size: 1rem;
+  color: #042458;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  width: 80%;
+  padding-top: 5px;
+}
+.formulariorow
+{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.formtexto {
+  margin-bottom: 5px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+.formcompletar {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+.formcampo {
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+.botonenviar{
+  width: auto;
+}
+}
