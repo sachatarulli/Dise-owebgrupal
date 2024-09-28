@@ -216,7 +216,8 @@ ul {
   margin: 10px; /* Ajusta el margen según necesites */
   font-weight: bold;
   margin-top: 10px;
-  font-size: large;
+  color: var(--color-letra);
+  
 }
 
 .descripcion-soporte {
