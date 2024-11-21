@@ -68,6 +68,19 @@
   color: #042458;
 }
 
+.boton-sitio {
+  background-color: #042458;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.trabajo-card h4 {
+  color: #042458;
+  margin-top: 10px;
+}
+
 .tecnologias {
   width: 90%;
   background-color: #d3e8fb;
@@ -103,6 +116,11 @@
   max-width: 100px;
   max-height: 100px;
   object-fit: contain;
+}
+
+.botones-sitio {
+  display: flex;
+  justify-content: space-around;
 }
 
 @media (max-width: 800px) {
